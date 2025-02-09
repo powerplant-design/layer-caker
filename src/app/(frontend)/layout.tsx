@@ -1,5 +1,7 @@
 import { SanityLive } from "@/sanity/lib/live";
 import type { Metadata } from "next";
+import { Header } from "@/components/Header";
+
 // import "./../globals.css";
 
 export const metadata: Metadata = {
@@ -14,6 +16,7 @@ export default function FrontendLayout({
 }>) {
     return (
         <>
+            <Header />
             {children}
             <SanityLive />
         </>
